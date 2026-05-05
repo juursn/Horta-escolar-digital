@@ -24,6 +24,7 @@ body{
     flex-direction: row;
     justify-content: end;
     align-items: center;
+    position: fixed;
 
     gap: 15px;
     padding: 16px 8px;
@@ -36,12 +37,26 @@ body{
 
 }
 
+#menu-aberto{
+
+}
+
+#pesquisar{
+    border: none;
+    background-color: #fafafa;
+    
+    height: 30px;
+    width: 80%;
+}
+.small{
+
+}
 main{flex: 1;}
 
 h1{
-    margin-bottom: 35px;
-
-    font-size:clamp(2.5rem,4vw,4rem) ;
+    margin: 48px 0 30px 0;
+    padding: 0 5px;
+    font-size:clamp(2.3rem,3.5vw,3.8rem) ;
     font-weight: 500;
 
     background: linear-gradient(90deg, #68FA71, #47A04D, #35823A );
@@ -117,11 +132,11 @@ h1{
     height: 150px;    
     border-radius: 15px;
 
-    transition: .3s;
+    transition: .3s ease;
 }
 
 #plantas-catalogo .planta:hover{
-    transform: scale(.9);
+    transform: scale(0.9);
 }
 
 #plantas-catalogo .planta:nth-child(1){background-image: url(../IMG/alimenticia.png);}
