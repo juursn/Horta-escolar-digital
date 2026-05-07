@@ -24,6 +24,7 @@ body{
     flex-direction: row;
     justify-content: end;
     align-items: center;
+    position: fixed;
 
     gap: 15px;
     padding: 16px 8px;
@@ -33,10 +34,12 @@ body{
     background-position: fixed;
     background-color: rgba(255, 255, 255, 0.113);
     backdrop-filter: blur(10px);
-
 }
 
-main{flex: 1;}
+main{
+    flex: 1;
+    margin-top: 50px;
+}
 
 h1{
     margin-bottom: 35px;
@@ -47,6 +50,40 @@ h1{
     background: linear-gradient(90deg, #68FA71, #47A04D, #35823A );
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+#sidebar{
+    position: fixed;
+    display: none;
+    background: #4BFF72;
+    
+    width: 100%;
+    height: auto;
+    padding-left: 40px;
+    left: 0;
+    margin-top: 10px;
+
+    font-size: 22px ;
+}
+
+#sidebar #menu-mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    gap: 20px;
+    margin: 20px;
+}
+
+#menu-mobile li, a{
+    text-decoration: none;
+    list-style: none;
+
+    color: black;
+}
+
+#menu-mobile p{
+    opacity: 0.5;
 }
 
 /* Imagem da mascote Diana e texto introdutório  */

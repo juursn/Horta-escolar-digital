@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +9,23 @@
 <body>
     <header>
         <nav id="barra-navegacao"> 
-            <div id="pesquisar"><img src="IMG/Pesquisa.svg" alt="Pesquisar"></div>
-            <div id="menu"><img src="IMG/Menu.svg" alt="Menu"></div> 
+            <div id="pesquisar">
+                <img src="IMG/Pesquisa.svg" alt="Pesquisar">
+            </div>
+            <div id="menu">
+                <img src="IMG/Menu.svg" alt="Menu" id="btn-menu" onclick=toggleMenu()>
+
+                <div id="sidebar">
+                    <ul id="menu-mobile">
+                        <p>Recomendação</p>
+                        <li><a href="#">oiioioioi</a></li>
+                        <li><a href="#">oiioioioi</a></li>
+                        <li><a href="#">oiioioioi</a></li>
+                        <li><a href="#">oiioioioi</a></li>
+                        <li><a href="#">oiioioioi</a></li>
+                    </ul>
+                </div>
+            </div> 
         </nav>
     </header>
 
@@ -64,5 +79,7 @@
         </div>
         <p>Cultivar hoje para colher um futuro melhor 🌿</p>
     </footer>
+
+    <script src="JS/main.js"></script>
 </body>
 </html>
