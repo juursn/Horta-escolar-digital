@@ -1,68 +1,108 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">
-    <title>Horta Escolar Digital</title>
-</head>
-<body>
-    <header>
-        <nav id="barra-navegacao"> 
-            <div id="pesquisar"><img src="IMG/Pesquisa.svg" alt="Pesquisar"></div>
-            <div id="menu"><img src="IMG/Menu.svg" alt="Menu"></div> 
-        </nav>
-    </header>
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="CSS/style.css" />
+		<title>Horta Escolar Digital</title>
+	</head>
+	<body>
+		<header>
+			<!-- == BARRA DE NAVEGAÇÃO E MENU == -->
+			<nav id="barra-navegacao">
+				<!-- barra de pesquisa -->
+				<div id="pesquisar">
+					<img src="IMG/Pesquisa.svg" alt="Pesquisar" />
+				</div>
+				<div id="menu">
+					<!-- menu hambuguer -->
+					<img
+						src="IMG/Menu.svg"
+						alt="Menu"
+						id="btn-menu"
+						onclick="toggleMenu()"
+					/>
 
-    <main>
-        <h1>Horta Escolar Digital</h1>
-        <section id="banner-principal">
-            <img src="IMG/Diana.png" alt="">
-            <div id="mensagem-banner">
-                <p>A Horta Escolar Digital é uma plataforma interativa criada para aproximar tecnologia, educação e sustentabilidade.</p>
-            </div>
-        </section>
-        <section id="catalogo">
-            <h2>Catálogo de plantas</h2>
-            <div id="plantas-catalogo">
-                <div class="planta">
-                    <p>Alimentícia</p>
-                </div>
+					<!--Fim menu hamburguer-->
+				</div>
+			</nav>
 
-                <div class="planta">
-                    <p>Medicinal</p>
-                </div>
+			<!-- Opções de navegação  -->
+			<div id="sidebar">
+				<ul id="menu-mobile">
+					<p class="small">Recomendações</p>
+					<li><a href="#">Catálogo de plantas</a></li>
+					<li><a href="#">Diagnóstico de plantas</a></li>
+					<li><a href="#">Diagnóstico de pragas</a></li>
+					<li><a href="#">Gestão da horta</a></li>
+					<li><a href="#">Sobre o projeto</a></li>
+				</ul>
+			</div>
+		</header>
 
-                <div class="planta">
-                    <p>Ornamentar</p>
-                </div>
+		<main>
+			<!-- == BANNER PRINCIPAL == -->
+			<h1>Horta Escolar Digital</h1>
+			<section id="banner-principal">
+				<img src="IMG/Diana.png" alt="" />
+				<div id="mensagem-banner">
+					<p>
+						A Horta Escolar Digital é uma plataforma interativa criada para
+						aproximar tecnologia, educação e sustentabilidade.
+					</p>
+				</div>
+			</section>
 
-                <div class="planta">
-                    <p>Carnívora</p>
-                </div>  
-            </div>
-        </section>
+			<!-- == CATÁLOGO DE PLANTAS == -->
+			<section id="catalogo">
+				<h2>Catálogo de plantas</h2>
+				<div id="plantas-catalogo">
+					<div class="planta">
+						<p>Alimentícia</p>
+					</div>
 
-    </main>
-    <footer>
-        <h3>©ECIT Manoel Lisboa de Moura</h3>
-        <div id="rodape">
-            <div class="info">
-                <p>Localização:</p>
-                <p>Rua: Rua Antônio Claudinho Leal</p>
-                <p>Bairro: Costa e Silva</p>
-                <p>CEP: 58082-050</p>
-                <p>Cidade: João Pessoa</p>
-                <p>País: Brasil</p>
-            </div>
-            <div class="info">
-                <p>Contato:</p>
-             
-                <p>Instagram: <a href="https://www.instagram.com/ecitmanoellisboa/" target="_blank" rel="follow">@ECITMANOELLISBOA</a></p>
+					<div class="planta">
+						<p>Medicinal</p>
+					</div>
 
-            </div>
-        </div>
-        <p>Cultivar hoje para colher um futuro melhor 🌿</p>
-    </footer>
-</body>
+					<div class="planta">
+						<p>Ornamentar</p>
+					</div>
+
+					<div class="planta">
+						<p>Carnívora</p>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<h3>©ECIT Manoel Lisboa de Moura</h3>
+			<div id="rodape">
+				<div class="info">
+					<p>Localização:</p>
+					<p>Rua: Rua Antônio Claudinho Leal</p>
+					<p>Bairro: Costa e Silva</p>
+					<p>CEP: 58082-050</p>
+					<p>Cidade: João Pessoa</p>
+					<p>País: Brasil</p>
+				</div>
+				<div class="info">
+					<p>Contato:</p>
+
+					<p>
+						Instagram:
+						<a
+							href="https://www.instagram.com/ecitmanoellisboa/"
+							target="_blank"
+							rel="follow"
+							>@ECITMANOELLISBOA</a
+						>
+					</p>
+				</div>
+			</div>
+			<p>Cultivar hoje para colher um futuro melhor 🌿</p>
+		</footer>
+
+		<script src="JS/main.js"></script>
+	</body>
 </html>
