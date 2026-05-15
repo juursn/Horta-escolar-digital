@@ -3,6 +3,8 @@ const form = {
     btnMenu: () => document.querySelector("#btn-menu")
 }
 
+ form.btnMenu().src = "IMG/menu.svg"
+
 const toggleMenu = () => {
     if (form.sidebar().style.display === "flex") {
         form.sidebar().style.display = "none"
